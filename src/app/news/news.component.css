@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center; /* Centra los cuadros horizontalmente */
+    align-items: center; /* Centra los cuadros verticalmente */
+    height: 100vh; /* Altura de la pantalla completa */
+    margin: 0;
+    background-color: #f0f0f0; /* Color de fondo para visualización */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los cuadros */
+}
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: #4CAF50; /* Color de fondo de los cuadros */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+}
+
+.align_center{
+    align-content: center;
+}

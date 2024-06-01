@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.btn-primary {
+    width: 100%;
+}
+  
+  .container {
+    
+    margin-top: 20px;
+  }
+  
+  .row {
+    margin-bottom: 15px;
+  }
+  
+  .col-md-6,.col-md-7 ,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  /* Estilo para la primera fila con imagen de fondo */
+  .bg-fila1 {
+    background-image: url('https://img.freepik.com/fotos-premium/fondo-tren-blanco-negro-horizontal-hd_199726-4644.jpg?w=996');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 200px; /* Ajusta la altura según sea necesario */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    background-blend-mode: overlay;
+  }
+  
+  

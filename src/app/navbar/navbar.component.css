@@ -1,0 +1,13 @@
+/* Estilo para la primera fila con imagen de fondo */
+.bg-fila1 {
+    background-image: url('https://img.freepik.com/fotos-premium/fondo-tren-blanco-negro-horizontal-hd_199726-4644.jpg?w=996');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 200px; /* Ajusta la altura según sea necesario */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    background-blend-mode: overlay;
+  }

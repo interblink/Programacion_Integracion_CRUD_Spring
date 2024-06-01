@@ -1,0 +1,20 @@
+<p>interface-enum works!</p>
+ <div>{{user.ID}}</div>
+<div>{{user.Apellido}}</div>
+<div *ngIf="user.Tipo_user == 0">Administrador</div>
+<div *ngIf="user.Tipo_user == 1">Cliente</div>
+<div *ngIf="user.Tipo_user == 2">Tecnico</div>
+
+<!--
+<div>
+    <ul>
+        <li *ngFor="let datos of user">{{datos.Nombre}}, {{datos.Apellido}}, 
+            <div *ngIf="datos.Tipo_user == 0">Administrador</div>
+            <div *ngIf="datos.Tipo_user == 1">Cliente</div>
+            <div *ngIf="datos.Tipo_user == 2">Tecnico</div> </li>
+    </ul>
+
+
+</div>
+
+-->
