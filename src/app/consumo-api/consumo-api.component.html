@@ -1,13 +1,12 @@
-<p>consumo-api works!</p>
+<div class="container">
+    <h2 >Informacion</h2>
+          <div *ngFor="let datas of data">
+        Sitio:  {{ datas.Sitio | json }}<br>
+        Servicio:  {{ datas.Servicio | json }}<br>
+        Compra: {{ "$"+datas.Cotizacion[0].Compra | json }}<br>
+        Venta: {{ "$"+datas.Cotizacion[0].Compra | json }} 
+      </div> 
+    </div>    
 
-<!-- movie-list.component.html -->
-
-
-   
-    <h2>Listado de Películas</h2>
-    <ul>
-      <li *ngFor="let movie of movies">
-        {{ movie }}
-      </li>
-    </ul>
-
+    
+    
