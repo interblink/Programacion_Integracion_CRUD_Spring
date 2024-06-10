@@ -1,0 +1,13 @@
+.fondo{
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+}
+.formulario {
+    max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+    background-color: white; /* Color de fondo verde */
+    padding: 20px; /* Espacio alrededor del formulario */
+    border-radius: 10px; /* Borde redondeado */
+    margin: auto;
+
+  }
+  

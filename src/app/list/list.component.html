@@ -1,0 +1,23 @@
+<div class="container"> 
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Nombre</th>
+        <th>Prioridad</th>
+        <th>Teléfono</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.id }}</td>
+        <td>{{ usuario.email }}</td>
+        <td>{{ usuario.nombre }}</td>
+        <td>{{ usuario.prioridad }}</td>
+        <td>{{ usuario.telefono }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

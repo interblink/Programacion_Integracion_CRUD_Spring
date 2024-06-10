@@ -9,7 +9,10 @@ import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { ConsumoApiComponent } from './consumo-api/consumo-api.component';
 import { HttpClientModule } from '@angular/common/http';
-import { InterfaceEnumComponent } from './interface-enum/interface-enum.component'; // Asegúrate de importar HttpClientModule
+import { InterfaceEnumComponent } from './interface-enum/interface-enum.component';
+import { RegistrarComponent } from './registrar/registrar.component'; // Asegúrate de importar HttpClientModule
+import { FormsModule } from '@angular/forms';
+import { ListComponent } from './list/list.component';  // <--- Añadir esta línea
 
 @NgModule({
   declarations: [
@@ -20,12 +23,15 @@ import { InterfaceEnumComponent } from './interface-enum/interface-enum.componen
     LoginComponent,
     FooterComponent,
     ConsumoApiComponent,
-    InterfaceEnumComponent
+    InterfaceEnumComponent,
+    RegistrarComponent,
+    ListComponent
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule // Agrega HttpClientModule aquí en los imports
+    HttpClientModule, // Agrega HttpClientModule aquí en los imports
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
