@@ -8,18 +8,17 @@ import { ServiceregistroserviceService } from './serviceregistroservice.service'
   templateUrl: './registrar.component.html',
   styleUrls: ['./registrar.component.css']
 })
-export class RegistrarComponent implements OnInit {
+export class RegistrarComponent {
  
-  email: String="";
-  nombre: String="";
+  email: string="";
+  nombre: string="";
   prioridad: number=0;
-  telefono: String="";
+  telefono: string="";
+  password: string="";
  
  
   constructor(private service_registrar: ServiceregistroserviceService){}
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  
 
    onSubmit(form: any) {
     if(form.valid){
@@ -29,7 +28,8 @@ export class RegistrarComponent implements OnInit {
          email: form.value.email,
          nombre: form.value.nombre,
          prioridad: form.value.prioridad,
-         telefono: form.value.telefono
+         telefono: form.value.telefono,
+         password: form.value.password
       }
 
       this.service_registrar.registerUser(user).subscribe(response=>{

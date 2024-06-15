@@ -1,0 +1,5 @@
+se guardan en la carpeta assets.
+
+y se llaman asi en el img de src:
+
+<img src="./assets/listar.jpg" alt="Listar" width="200" height="200">

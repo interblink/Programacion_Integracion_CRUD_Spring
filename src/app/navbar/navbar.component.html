@@ -7,22 +7,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="news">News</a>
-                <a class="nav-item nav-link" href="#">Discount</a>
-                <a class="nav-item nav-link" href="login">Login</a>
-                <a class="nav-item nav-link" href="registrar">Registrar</a>
+                <a class="nav-link nav-link" routerLink="/home" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" *ngIf="sin_iniciar_seccion" href="news">News</a>
+                <a class="nav-item nav-link" *ngIf="sin_iniciar_seccion" href="#">Discount</a>
+                <a class="nav-item nav-link" *ngIf="sin_iniciar_seccion" href="login">Login</a>
+                <a class="nav-item nav-link" *ngIf="sin_iniciar_seccion" href="registrar">Registrar</a>
+                <a class="nav-item nav-link" *ngIf="seccion_iniciada" href="dashboard">Dashboard</a>
+                <button type="button" *ngIf="seccion_iniciada" class="btn btn-block" (click)="logout()" >Desconectar</button>
+                
               </div>
             </div>
           </nav>
         
-
-
-
-
         </div>
         
     </div>
-   
-   
+  
 </div>

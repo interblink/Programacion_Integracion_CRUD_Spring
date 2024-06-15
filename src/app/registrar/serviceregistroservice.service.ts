@@ -10,7 +10,7 @@ export class ServiceregistroserviceService {
 
   constructor(private http: HttpClient) { }
 
-  Api_URL='      ';
+  Api_URL='http://localhost:8080/usuario';
 
   registerUser(user:any):Observable<FieldUser>{
     return this.http.post<FieldUser>(this.Api_URL,user);
